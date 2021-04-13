@@ -3,6 +3,11 @@
   src: url(./fonts/JetBrainsMono-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Icons";
+  src: url(./fonts/icomoon.ttf) format("truetype");
+}
+
 body {
   font-family: JetBrainsMono !important;
   /* Full screen width and height */
@@ -83,6 +88,7 @@ img#profile {
 #social > div {
   flex-grow: 1;
   width: 10%;
+  text-align: center;
 }
 
 #social > div > a {
@@ -95,9 +101,25 @@ img#profile {
   margin: 1rem;
 }
 
+#social {
+  font-family: Icons;
+}
+
+#social svg {
+  /* height: 3.5rem; */
+  /* width: 3.5rem; */
+  /* transform: scale(1.5); */
+  fill: red;
+}
+
 /* icon colors */
+
 .fa-facebook {
   color: #4c6ef5;
+}
+
+.codersrank {
+  color: blue;
 }
 
 @media only screen and (max-width: 900px) {

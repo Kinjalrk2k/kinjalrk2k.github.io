@@ -102,8 +102,13 @@ class App extends React.Component {
           </div>
           <div id="social">
             <div>
-              <a href="https://www.facebook.com/kinjal.raykarmakar">
-                <i class="fab fa-facebook"></i>
+              <a href="https://github.com/Kinjalrk2k">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/kinjal-raykarmakar">
+                <i class="fab fa-linkedin"></i>
               </a>
             </div>
             <div>
@@ -111,28 +116,27 @@ class App extends React.Component {
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
-            <div>Hi</div>
+            <div>
+              <a href="https://www.instagram.com/kinjal.raykarmakar">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/kinjal2209">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.quora.com/profile/Kinjal-Raykarmakar">
+                <i class="fab fa-quora"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://profile.codersrank.io/user/kinjalrk2k">
+                {/* <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codersrank.svg" /> */}
+                <span class="codersrank">&#xe91b;</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
