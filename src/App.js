@@ -90,14 +90,50 @@ class App extends React.Component {
     return (
       <div id="container" ref={this.containerRef}>
         <div id="inner" ref={this.innerRef}>
-          <div id="header">
-            <img
-              id="profile"
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-24dd4.appspot.com/o/images%2F1573102050331.jfif-1617201776341?alt=media&token=8c871b61-bb9c-4d3f-9392-2a503eb81795"
-            ></img>
-            <h1>KINJAL RAYKARMAKAR</h1>
+          <div>
+            <div id="header">
+              <img
+                id="profile"
+                src="https://firebasestorage.googleapis.com/v0/b/portfolio-24dd4.appspot.com/o/images%2F1573102050331.jfif-1617201776341?alt=media&token=8c871b61-bb9c-4d3f-9392-2a503eb81795"
+              ></img>
+              <h1>KINJAL RAYKARMAKAR</h1>
+            </div>
+            <h2>DEVELOPER</h2>
           </div>
-          <h2>DEVELOPER</h2>
+          <div id="social">
+            <div>
+              <a href="https://www.facebook.com/kinjal.raykarmakar">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/kinjal.raykarmakar">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+            <div>Hi</div>
+          </div>
         </div>
       </div>
     );

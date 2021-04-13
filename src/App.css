@@ -20,7 +20,7 @@ body {
 
 #container {
   /* This will come into play later */
-  perspective: 40px;
+  perspective: 50px;
 }
 
 #inner {
@@ -41,18 +41,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #header {
   display: flex;
-  margin-top: -12rem;
+  /* margin-top: -12rem; */
   justify-content: space-between;
 }
 
 h1,
 h2 {
   margin: 0;
+  text-align: center;
 }
 
 h1 {
@@ -70,6 +71,33 @@ img#profile {
   height: 10rem;
   border-radius: 50%;
   margin-top: -5rem;
+}
+
+#social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+#social > div {
+  flex-grow: 1;
+  width: 10%;
+}
+
+#social > div > a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+}
+
+#social a {
+  margin: 1rem;
+}
+
+/* icon colors */
+.fa-facebook {
+  color: #4c6ef5;
 }
 
 @media only screen and (max-width: 900px) {
