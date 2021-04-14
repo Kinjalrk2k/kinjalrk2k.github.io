@@ -164,6 +164,43 @@ class App extends React.Component {
 
     this.containerRef.current.onmousemove = onMouseMoveHandler;
     this.containerRef.current.ontouchmove = onMouseMoveHandler;
+
+    // const handleOrientation = (e) => {
+    //   var absolute = e.absolute;
+    //   var alpha = e.alpha;
+    //   var beta = e.beta;
+    //   var gamma = e.gamma;
+
+    //   console.log(beta, gamma);
+    // };
+
+    try {
+      window.addEventListener(
+        "deviceorientation",
+        (e) => {
+          var absolute = e.absolute;
+          var alpha = e.alpha;
+          var beta = e.beta;
+          var gamma = e.gamma;
+
+          const gammaMax =
+            gamma < 0 ? Math.max(gamma, -0.3) : Math.min(gamma, 0.3);
+
+          const betaMax = beta < 0 ? Math.max(beta, -0.3) : Math.min(beta, 0.3);
+
+          var style =
+            "rotateX(" + betaMax + "deg) rotateY(" + gammaMax + "deg)";
+          that.innerRef.current.style.transform = style;
+          that.innerRef.current.style.webkitTransform = style;
+          that.innerRef.current.style.mozTransform = style;
+          that.innerRef.current.style.msTransform = style;
+          that.innerRef.current.style.oTransform = style;
+
+          console.log(betaMax);
+        },
+        true
+      );
+    } catch (e) {}
   }
 
   render() {
