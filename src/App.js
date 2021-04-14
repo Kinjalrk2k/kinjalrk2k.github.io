@@ -8,6 +8,8 @@ class App extends React.Component {
     this.innerRef = React.createRef();
   }
 
+  renderSocial() {}
+
   componentDidMount() {
     // Mouse
     var mouse = {
