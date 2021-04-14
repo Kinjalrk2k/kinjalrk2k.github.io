@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends React.Component {
   constructor(props) {
@@ -105,7 +106,7 @@ class App extends React.Component {
           <div id="social">
             <div>
               <a href="https://github.com/Kinjalrk2k">
-                <i class="fab fa-github"></i>
+                <FontAwesomeIcon icon={["fab", "github"]} />
               </a>
             </div>
             <div>
@@ -135,7 +136,6 @@ class App extends React.Component {
             </div>
             <div>
               <a href="https://profile.codersrank.io/user/kinjalrk2k">
-                {/* <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codersrank.svg" /> */}
                 <span class="codersrank">&#xe91b;</span>
               </a>
             </div>
