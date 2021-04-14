@@ -30,7 +30,7 @@ body {
 
 #inner {
   width: 50rem;
-  height: 18rem;
+  height: 25rem;
   background-color: white;
 
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
@@ -87,8 +87,9 @@ img#profile {
 
 #social > div {
   flex-grow: 1;
-  width: 10%;
+  width: 15%;
   text-align: center;
+  margin: 1rem;
 }
 
 #social > div > a {
@@ -105,36 +106,23 @@ img#profile {
   font-family: Icons;
 }
 
-#social svg {
-  /* height: 3.5rem; */
-  /* width: 3.5rem; */
-  /* transform: scale(1.5); */
-  fill: red;
-}
-
-/* icon colors */
-
-.fa-facebook {
-  color: #4c6ef5;
-}
-
-.codersrank {
-  color: blue;
-}
-
 @media only screen and (max-width: 900px) {
   html {
     font-size: 13px;
   }
 }
 
+/* @media only screen and (max-width: 700px) {
+  html {
+    font-size: 11px;
+  }
+} */
+
 @media only screen and (max-width: 700px) {
   html {
     font-size: 11px;
   }
-}
 
-@media only screen and (max-width: 700px) {
   #header {
     flex-direction: column;
     align-items: center;
@@ -142,6 +130,7 @@ img#profile {
 
   #inner {
     width: 35rem;
+    height: 37rem;
   }
 
   img#profile {
@@ -152,6 +141,7 @@ img#profile {
 @media only screen and (max-width: 450px) {
   #inner {
     width: 25rem;
+    height: 43rem;
   }
 
   h1,

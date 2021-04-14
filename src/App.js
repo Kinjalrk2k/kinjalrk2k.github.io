@@ -3,13 +3,90 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends React.Component {
+  state = {
+    social: [
+      {
+        link: "https://github.com/Kinjalrk2k",
+        icon: <FontAwesomeIcon icon={["fab", "github"]} />,
+      },
+      {
+        link: "https://www.linkedin.com/in/kinjal-raykarmakar",
+        icon: <FontAwesomeIcon icon={["fab", "linkedin"]} />,
+      },
+      {
+        link: "https://www.facebook.com/kinjal.raykarmakar",
+        icon: <FontAwesomeIcon icon={["fab", "facebook"]} />,
+      },
+      {
+        link: "https://www.instagram.com/kinjal.raykarmakar",
+        icon: <FontAwesomeIcon icon={["fab", "instagram"]} />,
+      },
+      {
+        link: "https://twitter.com/kinjal2209",
+        icon: <FontAwesomeIcon icon={["fab", "twitter"]} />,
+      },
+      {
+        link: "https://www.quora.com/profile/Kinjal-Raykarmakar",
+        icon: <FontAwesomeIcon icon={["fab", "quora"]} />,
+      },
+      {
+        link: "https://profile.codersrank.io/user/kinjalrk2k",
+        icon: <span className="codersrank">&#xe91b;</span>,
+      },
+      {
+        link: "https://www.hackerrank.com/kinjalrk2k",
+        icon: <FontAwesomeIcon icon={["fab", "hackerrank"]} />,
+      },
+      {
+        link: "https://www.codechef.com/users/kinjalrk2k",
+        icon: <span className="codechef">&#xe900;</span>,
+      },
+      {
+        link: "https://stackoverflow.com/users/10537134/kinjal-raykarmakar",
+        icon: <FontAwesomeIcon icon={["fab", "stack-overflow"]} />,
+      },
+      {
+        link: "https://www.youtube.com/channel/UCINTZKi7pDBr_iDkibhTXVg/",
+        icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,
+      },
+      {
+        link: "https://www.deviantart.com/kinjal2209",
+        icon: <FontAwesomeIcon icon={["fab", "deviantart"]} />,
+      },
+      {
+        link: "https://www.reddit.com/user/krk2k",
+        icon: <FontAwesomeIcon icon={["fab", "reddit"]} />,
+      },
+      // {
+      //   link: "https://in.pinterest.com/kinjalraykarmak",
+      //   icon: <FontAwesomeIcon icon={["fab", "pinterest"]} />,
+      // },
+      {
+        link: "https://dev.to/kinjalrk2k",
+        icon: <FontAwesomeIcon icon={["fab", "dev"]} />,
+      },
+      {
+        link: "https://www.credly.com/users/kinjalrk2k/badges",
+        icon: <span className="credly">&#xe901;</span>,
+      },
+    ],
+  };
+
   constructor(props) {
     super(props);
     this.containerRef = React.createRef();
     this.innerRef = React.createRef();
   }
 
-  renderSocial() {}
+  renderSocial() {
+    return this.state.social.map((s, i) => {
+      return (
+        <div key={i}>
+          <a href={s.link}>{s.icon}</a>
+        </div>
+      );
+    });
+  }
 
   componentDidMount() {
     // Mouse
@@ -103,43 +180,7 @@ class App extends React.Component {
             </div>
             <h2>DEVELOPER</h2>
           </div>
-          <div id="social">
-            <div>
-              <a href="https://github.com/Kinjalrk2k">
-                <FontAwesomeIcon icon={["fab", "github"]} />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/kinjal-raykarmakar">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-            <div>
-              <a href="https://www.facebook.com/kinjal.raykarmakar">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/kinjal.raykarmakar">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div>
-              <a href="https://twitter.com/kinjal2209">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-            <div>
-              <a href="https://www.quora.com/profile/Kinjal-Raykarmakar">
-                <i class="fab fa-quora"></i>
-              </a>
-            </div>
-            <div>
-              <a href="https://profile.codersrank.io/user/kinjalrk2k">
-                <span class="codersrank">&#xe91b;</span>
-              </a>
-            </div>
-          </div>
+          <div id="social">{this.renderSocial()}</div>
         </div>
       </div>
     );
