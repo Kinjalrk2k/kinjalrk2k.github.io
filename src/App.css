@@ -27,9 +27,9 @@ body {
 
 #container {
   /* This will come into play later */
-  perspective: 70px;
+  perspective: 40px;
   box-shadow: 0px 0px 300px 50px rgba(0, 0, 0, 0.75);
-  border-radius: 2rem;
+  border-radius: 3rem;
 }
 
 #inner {
