@@ -174,6 +174,8 @@ class App extends React.Component {
             <div id="header">
               <img
                 id="profile"
+                onLoad={(e) => (e.target.className = "img-onLoad")}
+                alt="It's me!"
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-24dd4.appspot.com/o/images%2F1573102050331.jfif-1617201776341?alt=media&token=8c871b61-bb9c-4d3f-9392-2a503eb81795"
               ></img>
               <h1>KINJAL RAYKARMAKAR</h1>

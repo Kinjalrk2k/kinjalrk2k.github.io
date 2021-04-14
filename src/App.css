@@ -82,6 +82,12 @@ img#profile {
   height: 10rem;
   border-radius: 50%;
   margin-top: -5rem;
+  opacity: 0;
+}
+
+.img-onLoad {
+  opacity: 1 !important;
+  transition: opacity 0.5s linear;
 }
 
 #social {
