@@ -25,7 +25,7 @@ body {
 
 #container {
   /* This will come into play later */
-  perspective: 50px;
+  perspective: 70px;
 }
 
 #inner {
@@ -100,6 +100,11 @@ img#profile {
 
 #social a {
   margin: 1rem;
+}
+
+#social a span,
+svg {
+  color: black;
 }
 
 #social {
