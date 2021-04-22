@@ -87,7 +87,7 @@ img#profile {
 
 .img-onLoad {
   opacity: 1 !important;
-  transition: opacity 0.5s linear;
+  transition: opacity 2s linear;
 
   border: 0.3rem solid #313131;
   box-shadow: 0px 0px 69px 0px rgba(0, 0, 0, 0.75);
@@ -124,6 +124,20 @@ svg {
 
 #social {
   font-family: Icons;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease-in both;
+  /* animation-duration: 7s; */
 }
 
 @media only screen and (max-width: 900px) {

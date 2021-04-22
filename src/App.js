@@ -79,10 +79,24 @@ class App extends React.Component {
   }
 
   renderSocial() {
+    let randDurations = new Set();
+    const socialLength = this.state.social.length;
+    while (randDurations.size !== socialLength) {
+      randDurations.add(Math.floor(Math.random() * socialLength) + 1);
+    }
+    randDurations = [...randDurations];
+
     return this.state.social.map((s, i) => {
+      console.log(randDurations[i]);
       return (
         <div key={i}>
-          <a href={s.link}>{s.icon}</a>
+          <a
+            className="fade-in"
+            style={{ animationDuration: randDurations[i] + "s" }}
+            href={s.link}
+          >
+            {s.icon}
+          </a>
         </div>
       );
     });
