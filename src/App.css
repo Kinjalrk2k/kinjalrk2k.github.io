@@ -34,7 +34,7 @@ body {
 
 #inner {
   width: 50rem;
-  height: 25rem;
+  height: 30rem;
   /* background-color: white; */
   background-color: #424242;
 
@@ -140,6 +140,17 @@ svg {
   /* animation-duration: 7s; */
 }
 
+#portfolio a {
+  text-decoration: none !important;
+  padding: 1rem 2.5rem;
+
+  background-color: #f7f7f7;
+  color: #222222;
+  font-size: 1.5rem;
+
+  border-radius: 500px;
+}
+
 @media only screen and (max-width: 900px) {
   html {
     font-size: 13px;
@@ -164,7 +175,7 @@ svg {
 
   #inner {
     width: 35rem;
-    height: 37rem;
+    height: 43rem;
   }
 
   img#profile {
@@ -175,7 +186,7 @@ svg {
 @media only screen and (max-width: 450px) {
   #inner {
     width: 25rem;
-    height: 43rem;
+    height: 48rem;
   }
 
   h1,

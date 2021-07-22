@@ -167,6 +167,9 @@ class App extends React.Component {
             </div>
             <h2>DEVELOPER</h2>
           </div>
+          <div id="portfolio">
+            <a href="https://kinjal.co/portfolio">Portfolio</a>
+          </div>
           <div id="social">{this.renderSocial()}</div>
         </div>
       </div>
