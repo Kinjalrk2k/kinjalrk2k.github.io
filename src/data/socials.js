@@ -14,7 +14,7 @@ const socials = [
     icon: <FontAwesomeIcon icon={["fab", "facebook"]} />,
   },
   {
-    link: "https://www.instagram.com/kinjal.raykarmakar",
+    link: "https://www.instagram.com/kinjalrk2k",
     icon: <FontAwesomeIcon icon={["fab", "instagram"]} />,
   },
   {
@@ -46,6 +46,10 @@ const socials = [
     icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,
   },
   {
+    link: "https://www.youtube.com/channel/UCNmZZBDFrYRZA9DPpityLWg",
+    icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,
+  },
+  {
     link: "https://www.deviantart.com/kinjal2209",
     icon: <FontAwesomeIcon icon={["fab", "deviantart"]} />,
   },
@@ -61,10 +65,10 @@ const socials = [
     link: "https://dev.to/kinjalrk2k",
     icon: <FontAwesomeIcon icon={["fab", "dev"]} />,
   },
-  {
-    link: "https://www.credly.com/users/kinjalrk2k/badges",
-    icon: <span className="credly">&#xe901;</span>,
-  },
+  // {
+  //   link: "https://www.credly.com/users/kinjalrk2k/badges",
+  //   icon: <span className="credly">&#xe901;</span>,
+  // },
 ];
 
 export default socials;

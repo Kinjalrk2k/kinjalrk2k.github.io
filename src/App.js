@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { PORTFOLIO_LINK, PROFILE_PIC } from "./data/constants";
 import socials from "./data/socials";
 
 class App extends React.Component {
@@ -161,14 +162,14 @@ class App extends React.Component {
                 id="profile"
                 onLoad={(e) => (e.target.className = "img-onLoad")}
                 alt="It's me!"
-                src="https://ik.imagekit.io/kinjal/1573102050331__1__Y3YJUgtKV.jpeg?updatedAt=1626932670644"
+                src={PROFILE_PIC}
               ></img>
               <h1>KINJAL RAYKARMAKAR</h1>
             </div>
-            <h2>DEVELOPER</h2>
+            <h2>Developer</h2>
           </div>
           <div id="portfolio">
-            <a href="https://kinjal.co/portfolio">Portfolio</a>
+            <a href={PORTFOLIO_LINK}>Portfolio</a>
           </div>
           <div id="social">{this.renderSocial()}</div>
         </div>
