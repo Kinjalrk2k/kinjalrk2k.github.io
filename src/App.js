@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { PORTFOLIO_LINK, PROFILE_PIC } from "./data/constants";
+import { BLOG_LINK, PORTFOLIO_LINK, PROFILE_PIC } from "./data/constants";
 import socials from "./data/socials";
 
 class App extends React.Component {
@@ -170,6 +170,9 @@ class App extends React.Component {
           </div>
           <div id="portfolio">
             <a href={PORTFOLIO_LINK}>Portfolio</a>
+            <a href={BLOG_LINK} style={{ marginLeft: "1rem" }}>
+              Blog
+            </a>
           </div>
           <div id="social">{this.renderSocial()}</div>
         </div>

@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socials = [
   {
+    link: "mailto:me@kinjal.dev",
+    icon: <FontAwesomeIcon icon={"envelope"} />,
+  },
+  {
     link: "https://github.com/Kinjalrk2k",
     icon: <FontAwesomeIcon icon={["fab", "github"]} />,
   },
@@ -41,10 +45,10 @@ const socials = [
     link: "https://stackoverflow.com/users/10537134/kinjal-raykarmakar",
     icon: <FontAwesomeIcon icon={["fab", "stack-overflow"]} />,
   },
-  {
-    link: "https://www.youtube.com/channel/UCINTZKi7pDBr_iDkibhTXVg/",
-    icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,
-  },
+  // {
+  //   link: "https://www.youtube.com/channel/UCINTZKi7pDBr_iDkibhTXVg/",
+  //   icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,
+  // },
   {
     link: "https://www.youtube.com/channel/UCNmZZBDFrYRZA9DPpityLWg",
     icon: <FontAwesomeIcon icon={["fab", "youtube"]} />,

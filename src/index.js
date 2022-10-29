@@ -4,7 +4,8 @@ import App from "./App";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-library.add(fab);
+import { faEnvelope, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, faEnvelope, faEnvelopeOpen);
 
 ReactDOM.render(
   <React.StrictMode>
